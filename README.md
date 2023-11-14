@@ -1,7 +1,12 @@
-
+# HungerGames
 A new fork of ImSpoopy's [**HungerGames**](https://github.com/ImSpoopy/Hungergames)
 
-Updating this plugin to work on 1.14.4+
-See [**WIKI**](https://github.com/ShaneBeeStudios/HungerGames/wiki) for commands, permissions and setup instructions.
+- [SpigotMC](https://www.spigotmc.org/resources/hungergames.65942/)
+- [Wiki](https://github.com/ShaneBeeStudios/HungerGames/wiki)
 
-For a more detailed description of the plugin, find it on [**SpigotMC**](https://www.spigotmc.org/resources/hungergames.65942/)
+## Requirements
+- Java 17+
+- Paper 1.14.4+
+
+## Building
+Run `gradlew`

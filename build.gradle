@@ -26,8 +26,11 @@ repositories {
 }
 
 dependencies {
+    implementation "io.papermc:paperlib:${PAPERLIB_VERSION}"
+    implementation "org.bstats:bstats-bukkit:${BSTATS_BUKKIT_VERSION}"
+    implementation "org.apache.commons:commons-lang3:${COMMONS_LANG3_VERSION}"
+
     compileOnly "org.spigotmc:spigot-api:${SPIGOT_API_VERSION}"
-    compileOnly "io.papermc:paperlib:${PAPERLIB_VERSION}"
     compileOnly "me.clip:placeholderapi:${PLACEHOLDERAPI_VERSION}"
     compileOnly "de.simonsator:Party-and-Friends-MySQL-Edition-Spigot-API:${PARTY_AND_FRIENDS_VERSION}"
     // TODO CVE-2022-45690
@@ -35,7 +38,6 @@ dependencies {
     compileOnly "de.simonsator:DevelopmentPAFSpigot:${DEVELOPMENTPAFSPIGOT_VERSION}"
     compileOnly "com.alessiodp.parties:parties-api:${PARTIES_API_VERSION}"
     compileOnly "io.lumine:Mythic-Dist:${MYTHIC_DIST_VERSION}"
-    implementation "org.bstats:bstats-bukkit:${BSTATS_BUKKIT_VERSION}"
     compileOnly ("net.milkbowl.vault:VaultAPI:${VAULTAPI_VERSION}") {
         exclude group: "org.bukkit", module: "bukkit"
     }
@@ -45,7 +47,6 @@ dependencies {
         exclude group: "com.sk89q.worldguard", module: "worldguard-legacy"
         exclude group: "org.apache.maven.scm", module: "maven-scm-provider-gitexe"
     }
-    implementation "org.apache.commons:commons-lang3:${COMMONS_LANG3_VERSION}"
     compileOnly "de.maxhenkel.voicechat:voicechat-api:${VOICECHAT_API_VERSION}"
 }
 
