@@ -1,11 +1,29 @@
 name: HungerGames
 main: tk.shanebee.hg.HG
-authors: [bob7l, Spoopy, ShaneBee, JT122406]
+authors:
+- bob7l
+- Spoopy
+- ShaneBee
+- JT122406
 description: A Simple, fun, PvP arena plugin
-version: '${project.version}'
+version: '@version@'
 website: https://bitbucket.org/ShaneBeeStudios/hungergames
 api-version: '1.14'
-softdepend: [Multiverse-Core, MultiWorld, Vault, My_Worlds, GoldenEnchants, mcMMO, MythicMobs, PlaceholderAPI, XConomy, PartyAndFriends, Spigot-Party-API-PAF, Parties, NBTAPI]
+softdepend:
+- Multiverse-Core
+- MultiWorld
+- Vault
+- My_Worlds
+- GoldenEnchants
+- mcMMO
+- MythicMobs
+- PlaceholderAPI
+- XConomy
+- PartyAndFriends
+- Spigot-Party-API-PAF
+- Parties
+- NBTAPI
+- voicechat
 
 commands:
   hg:

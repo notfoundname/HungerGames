@@ -1,6 +1,7 @@
-/dependency-reduced-pom.xml
-/target/
-/.idea/
-/JavaDocs/
-/HungerGames.iml
+.idea
+.gradle
+build
+*.jar
+!gradle-wrapper.jar
 *.class
+*.conf
