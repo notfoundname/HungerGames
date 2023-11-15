@@ -8,5 +8,8 @@ A new fork of ImSpoopy's [**HungerGames**](https://github.com/ImSpoopy/Hungergam
 - Java 17+
 - Paper 1.14.4+
 
+## TODO
+- [ ] Use Configurate for configuration
+- [ ] Add Simple Voice Chat support
 ## Building
 Run `gradlew`
