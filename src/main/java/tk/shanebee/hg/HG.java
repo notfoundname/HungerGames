@@ -95,7 +95,7 @@ public class HG extends JavaPlugin {
 		//Bukkit.getLogger().info("Your server version is: " + getServer().getVersion() + "     Your Java Version is " + System.getProperty("java.version"));
 		String Version = System.getProperty("java.version");
 		if (Version.contains("1.8")) {
-			Bukkit.getLogger().info("Your Java Version is " + Version + "     This plugin requires Java 11 or higher");
+			Bukkit.getLogger().info("Your Java Version is " + Version + "     This plugin requires Java 17 or higher");
 			Bukkit.getPluginManager().disablePlugin(this);
 			return;
 		}
@@ -103,13 +103,11 @@ public class HG extends JavaPlugin {
 		Version = Version.substring(0, 2);
 		double version = Double.parseDouble(Version);
 
-		if (version < 11) {
-			Bukkit.getLogger().info("Your Java Version is " + System.getProperty("java.version") + " This plugin requires Java 11 or higher");
+		if (version < 17) {
+			Bukkit.getLogger().info("Your Java Version is " + System.getProperty("java.version") + " This plugin requires Java 17 or higher");
 			Bukkit.getPluginManager().disablePlugin(this);
 			return;
-		} else if (version >= 11  && version < 17) {
-			Bukkit.getLogger().info("Your Java Version is " + System.getProperty("java.version") + " This plugin is compatible with your version but we suggest you update to Java 17 or higher");
-		}else if (version >= 17) {
+		} else if (version >= 17) {
 			Bukkit.getLogger().info("Your Java Version is " + System.getProperty("java.version") + " This plugin is compatible with your version");
 		}
 		PaperLib.suggestPaper(this);
