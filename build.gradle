@@ -6,7 +6,7 @@ defaultTasks "clean", "build", "shadowJar"
 
 allprojects {
     group = "${HUNGERGAMES_GROUP}.hg"
-    version = "${HUNGERGAMES_VERSION}"
+    version = "${HUNGERGAMES_VERSION}-${System.getenv('BUILD_NUMBER') ?: "null"}"
 }
 
 subprojects {
