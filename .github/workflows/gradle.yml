@@ -4,6 +4,9 @@ on:
   push:
     branches: [ master ]
 
+env:
+  BUILD_NUMBER: "${{ github.run_number }}"
+
 jobs:
   build:
     runs-on: ubuntu-latest
